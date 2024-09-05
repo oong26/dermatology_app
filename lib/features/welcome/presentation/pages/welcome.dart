@@ -45,7 +45,7 @@ class WelcomePage extends StatelessWidget {
             const SizedBox(height: 30),
             PrimaryButton(
               onPressed: () {
-                debugPrint('Log In button clicked');
+                Navigator.pushNamed(context, '/login');
               },
               text: 'Log In',
             ),
@@ -54,7 +54,7 @@ class WelcomePage extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 60),
               child: SecondaryButton(
                 onPressed: () {
-                  debugPrint('Sign Up button clicked');
+                  Navigator.pushNamed(context, '/sign-up');
                 },
                 text: 'Sign Up',
               ),

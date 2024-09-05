@@ -8,3 +8,4 @@ const mSuccessColor = Color(0XFF00A773);
 const mErrorColor = Color(0XFFFF5963);
 const mWarningColor = Color(0XFFF9CF58);
 const mInfoColor = Color(0XFFFFFFFF);
+const mHintTextColor = Color(0XFF809CFF);

@@ -1,3 +1,4 @@
+import 'package:dermatology_app/config/theme/text_styles.dart';
 import 'package:flutter/material.dart';
 
 import 'colors.dart';
@@ -14,19 +15,16 @@ ThemeData theme() {
     ),
     fontFamily: 'League Spartan',
     appBarTheme: appBarTheme(),
-    useMaterial3: false,
+    useMaterial3: true,
   );
 }
 
 AppBarTheme appBarTheme() {
-  return const AppBarTheme(
+  return AppBarTheme(
     color: Colors.white,
     elevation: 0,
     centerTitle: true,
-    iconTheme: IconThemeData(color: Color(0XFF8B8B8B)),
-    titleTextStyle: TextStyle(
-      color: Color(0XFF8B8B8B),
-      fontSize: 18,
-    ),
+    iconTheme: const IconThemeData(color: mPrimaryColor, size: 32),
+    titleTextStyle: mPrimaryLargeTextStyle,
   );
 }
