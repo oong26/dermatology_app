@@ -109,10 +109,14 @@ class _LoginPageState extends State<LoginPage> {
                 Container(
                   alignment: Alignment.topRight,
                   padding: const EdgeInsets.only(top: 8),
-                  child: Text(
-                    'Forget Password?',
-                    style: mPrimarySmallTextStyle.copyWith(
-                        fontWeight: FontWeight.w500),
+                  child: GestureDetector(
+                    onTap: () =>
+                        Navigator.pushNamed(context, '/reset-password'),
+                    child: Text(
+                      'Forget Password?',
+                      style: mPrimarySmallTextStyle.copyWith(
+                          fontWeight: FontWeight.w500),
+                    ),
                   ),
                 ),
                 Container(
